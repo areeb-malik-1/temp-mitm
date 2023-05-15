@@ -1,3 +1,5 @@
+package com;
+
 import io.appium.mitmproxy.InterceptedMessage;
 import io.appium.mitmproxy.MitmproxyJava;
 
