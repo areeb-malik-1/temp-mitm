@@ -9,7 +9,7 @@ import java.util.concurrent.TimeoutException;
 
 public class Temp {
     public static void main(String[] args) throws IOException, URISyntaxException, TimeoutException, InterruptedException {
-        MitmproxyJava proxy = new MitmproxyJava("/home/mitmdump", (InterceptedMessage m) -> {
+        MitmproxyJava proxy = new MitmproxyJava("/usr/local/bin/mitmdump", (InterceptedMessage m) -> {
             System.out.println("intercepted request for " + m.requestURL.toString());
             return m;
         });
